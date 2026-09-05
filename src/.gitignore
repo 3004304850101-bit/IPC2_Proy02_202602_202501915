@@ -1,0 +1,27 @@
+# Compilación
+bin/
+obj/
+
+# Archivos generados por Visual Studio
+.vs/
+
+# Archivos de usuario
+*.user
+*.suo
+
+# Archivos de configuración local
+*.userprefs
+
+# Archivos de Rider
+.idea/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
