@@ -35,7 +35,7 @@ public class ArbolAVL
             nodo.Altura = 1 + (izq > der ? izq : der);
         }
 
-        private int FactorBalance(Nodo nodo)
+        private int FactorBalance(Nodo? nodo)
         {
             if (nodo == null) return 0;
             return AlturaNodo(nodo.Izquierda) - AlturaNodo(nodo.Derecha);
@@ -45,7 +45,7 @@ public class ArbolAVL
         //Izquierda-Izquierda
         private Nodo RotarDerecho(Nodo y)
         {
-            Nodo? x= y.Izquierda;
+            Nodo x= y.Izquierda!;
             Nodo? t2= x.Derecha;
 
             x.Derecha=y;
@@ -60,7 +60,7 @@ public class ArbolAVL
         //Derecha-Derecha
         private Nodo RotarIzquierda(Nodo y)
         {
-            Nodo? x= y.Derecha;
+            Nodo x= y.Derecha!;
             Nodo? t2= x.Izquierda;
 
             x.Izquierda=y;
@@ -82,7 +82,7 @@ public class ArbolAVL
             {
                 if (FactorBalance(nodo.Izquierda) < 0)
                 {
-                    nodo.Izquierda=RotarIzquierda(nodo.Izquierda);
+                    nodo.Izquierda=RotarIzquierda(nodo.Izquierda!);
                 }
 
                 return RotarDerecho(nodo);
@@ -92,7 +92,7 @@ public class ArbolAVL
             {
                 if (FactorBalance(nodo.Derecha) > 0)
                 {
-                    nodo.Derecha=RotarDerecho(nodo.Derecha);
+                    nodo.Derecha=RotarDerecho(nodo.Derecha!);
                 }
 
                 return RotarIzquierda(nodo);
@@ -236,4 +236,6 @@ public class ArbolAVL
             sb.AppendLine(actual.Dato.Nombre);
             Inorden(actual.Derecha, sb);               
         }
+
+         
     }

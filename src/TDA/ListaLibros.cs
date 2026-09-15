@@ -76,4 +76,19 @@ public class ListaLibro
         }
         
     }
+
+    public bool EsVacia()
+    {
+        if (cabeza == null)
+        {
+            return true;
+        }
+        
+        return false;
+    }
+
+    public NodoLibro? ObtenerCabeza()
+    {
+        return cabeza;
+    }
 }
