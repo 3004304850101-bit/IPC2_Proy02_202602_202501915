@@ -1,0 +1,36 @@
+## .NET / Build artifacts
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+*.dll
+*.exe
+*.pdb
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## VS Code
+.vscode/
+
+## JetBrains Rider
+.idea/
+*.sln.iml
+
+## Blazor / ASP.NET Core específico
+wwwroot/lib/**/*.min.js.map
+*.pfx
+
+## Archivos de publicación / release
+publish/
+*.publishsettings
+
+## Logs
+*.log
+
+## Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
