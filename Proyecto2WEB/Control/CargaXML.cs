@@ -2,7 +2,7 @@ using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Xml.Linq;
-namespace src.Modelo;
+namespace Proyecto2WEB.Modelo;
 
 public class CargaXML
 {

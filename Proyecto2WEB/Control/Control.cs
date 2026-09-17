@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace src.Modelo;
+namespace Proyecto2WEB.Modelo;
 
 public class Control
 {
@@ -114,11 +114,9 @@ public class Control
         return arbolCategorias.ListaCategorias();
     }
     //Libro Mayor y Menor ISBN
-    public string MayoryMenor()
+    public string Mayor()
     {
         Libro? libroMax=arbolLibros.MayorISBN();
-        Libro? libroMin=arbolLibros.MenorISBN();
-
         StringBuilder sb= new StringBuilder();
 
         if(libroMax != null)
@@ -128,9 +126,16 @@ public class Control
             sb.AppendLine($"Autor: {libroMax.Autor}");
             sb.AppendLine($"Categoria: {libroMax.Categoria}");
         }
-        
-            sb.AppendLine();
-        
+    
+            return sb.ToString().Trim(); 
+            
+    }
+
+    public string Menor()
+    {
+        Libro? libroMin=arbolLibros.MenorISBN();
+        StringBuilder sb= new StringBuilder();
+
         if(libroMin != null)
         {
             sb.AppendLine($"ISBN {libroMin.ISBN}");
@@ -140,7 +145,18 @@ public class Control
         }
 
         return sb.ToString().Trim(); 
-            
+    }
+
+    //Libros categoria especifica
+    public ListaLibro? LibrosC(string categoria)
+    {
+        NodoArbol? nodoBuscado=arbolCategorias.BuscarCategorias(categoria);
+        if(nodoBuscado != null)
+        {
+            return nodoBuscado.librosC;
+        }
+        
+        return null;
     }
 
     //LLAMAR A REPORTES

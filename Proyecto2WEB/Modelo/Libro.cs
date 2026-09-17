@@ -1,4 +1,4 @@
-namespace src.Modelo;
+namespace Proyecto2WEB.Modelo;
 
 public class Libro
 {

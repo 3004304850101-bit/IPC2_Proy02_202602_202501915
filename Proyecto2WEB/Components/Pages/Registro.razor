@@ -1,0 +1,64 @@
+@page "/registro"
+
+<h1><strong>Gestión Libros</strong></h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Registrar Libro</h4>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">ISBN</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Autor</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Categoria</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        
+        <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-success " style="width: 300px; ">Registrar</button>
+        </div>
+        <br>
+        <h4>Eliminar Libro</h4>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <br>
+    <div class="card text-bg-light mb-3" style=" height: 170px;">
+        <div class="card-header"><strong>ISBN</strong></div>
+        <div class="card-body">
+            <h4 class="card-title">Libro</h4>
+            <h6 class="card-title">Autor</h6>
+            <p class="card-text">Categoria</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-danger " style="width: 300px;">Eliminar</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Registrar Categoria</h4>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Categoria Padre</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="alert alert-success" role="alert" style="height: 90px;">
+            Nota: Si la categoría que registra considera que no es subcategoria de las existentes, Dejar espacio en blanco
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-success " style="width: 300px; ">Registrar</button>
+        </div>
+    </div>
+</div>

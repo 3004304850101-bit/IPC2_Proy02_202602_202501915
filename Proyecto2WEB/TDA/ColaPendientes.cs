@@ -1,4 +1,4 @@
-namespace src.Modelo;
+using Proyecto2WEB.Modelo;
 
 public class NodoCola
 {

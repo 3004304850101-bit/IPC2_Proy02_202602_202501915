@@ -85,6 +85,10 @@
     display: none;
 }
 
+.nav-item ::deep a {
+    display: flex;
+    align-items: center;
+}
 .navbar-toggler:checked ~ .nav-scrollable {
     display: block;
 }

@@ -1,0 +1,55 @@
+@page "/consulta"
+<h1><strong>Consulta la Biblioteca</strong></h1>
+<div class="row  d-flex text-center">
+    <div class="col-md-4">
+        <p>Libros Mayor y Menor ISBN</p>
+        <div class="card" style="background-color: #B9FFB0; height: 235px;">
+        <span class="bi bi-collection-fill d-flex justify-content-center align-items-center  fs-1" aria-hidden="true" style="height: 100px;"></span>
+
+        <div class="card-body">
+            <h5 class="card-title">Mayor ISBN</h5>
+            <h6 class="card-text">ISBN</h6>
+            <p class="card-text">Titulo</p>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="card" style="background-color:#FFA18A; height: 235px;">
+        <span class="bi bi-collection-fill d-flex justify-content-center align-items-center  fs-1" aria-hidden="true" style="height: 100px;"></span>
+
+        <div class="card-body">
+            <h5 class="card-title">Menor ISBN</h5>
+            <h6 class="card-text">ISBN</h6>
+            <p class="card-text">Titulo</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <p >Buscar Libro por ISBN</p>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <br>
+    <div class="card text-bg-light mb-3" style="height: 170px;" >
+        <div class="card-header"><strong>ISBN</strong></div>
+        <div class="card-body">
+            <h4 class="card-title">Libro</h4>
+            <h6 class="card-title">Autor</h6>
+            <p class="card-text">Categoria</p>
+    </div>
+</div>
+    </div>
+    <div class="col-md-4">
+        <p >Libros pertenencientes a una categoria</p>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <br>
+        <div class="overflow-auto border border-5 text-start " style="max-height: 455px; width: 420px; background-color:#def6ff;">
+            <br>
+            <p class="ps-3"><strong>Lista libros</strong></p>
+        </div>
+    </div>
+</div>

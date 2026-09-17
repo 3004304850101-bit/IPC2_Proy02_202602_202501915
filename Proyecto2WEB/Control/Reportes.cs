@@ -1,5 +1,5 @@
 using System.Diagnostics;
-namespace src.Modelo;
+namespace Proyecto2WEB.Modelo;
 
 public class Reportes
 {
